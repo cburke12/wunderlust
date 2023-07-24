@@ -12,14 +12,14 @@
         <h1>Wunderlust Travel <img src="logo.png" alt="Logo"></h1>
         <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
     </header>
-<nav>
-    <ul>
-        <li>Destinations</li>
-        <li>Inspirations</li>
-        <li>Special</li>
-        <li>Contact Us</li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#inspirations">Inspirations</a></li>
+            <li><a href="#special">Special</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
 
 <main>
     <section>
@@ -158,12 +158,16 @@
             <label for="last-name">Last Name</label>
             <input type="text" id="last-name" name="last-name" placeholder="Enter last name" required>
 
-            <label for="contact-method">Contact Method</label>
-            <select id="contact-method" name="contact-method" required>
-                <option value="email">Email</option>
-                <option value="text">Text</option>
-                <option value="phone">Phone</option>
-            </select>
+            <label for="contact-method">Contact Method:</label>
+<div class="toggle-switch">
+  <input type="radio" id="email" name="contact-method" value="email">
+  <label for="email">Email</label>
+  <input type="radio" id="text" name="contact-method" value="text">
+  <label for="text">Text</label>
+  <input type="radio" id="phone" name="contact-method" value="phone">
+  <label for="phone">Phone</label>
+</div>
+
 
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email" placeholder="Enter Email" required>
